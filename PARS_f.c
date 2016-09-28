@@ -39,6 +39,7 @@
 * V2.1.35	2015.04.09	Gergely Zsolt		15-73, 71-32, 71-33, 71-73, 73-02, 79-134, 73-23, 74-38				*
 * V2.1.36	2016.04.19	Gergely Zsolt		52-43, 52-82 -> Radio 9/9			*
 * V2.1.37	2016.09.14	Gergely Zsolt		54-64 -> Radio 3/5			*
+* V2.1.37	2016.09.28	Gergely Zsolt		50-66 -> Radio 2/5			*
 
 
 
@@ -294,7 +295,7 @@ ST[0].nSiteList[145]=8150; 	ST[0].nLinkList[145]=RADIO2_1;	/* RADIO2_1 54-71				
 ST[0].nSiteList[146]=8151; 	ST[0].nLinkList[146]=RADIO2_1;	/* RADIO2_1 50-08						VESZ */
 ST[0].nSiteList[147]=8152; 	ST[0].nLinkList[147]=RADIO2_1;	/* RADIO2_1 50-39						VESZ */
 ST[0].nSiteList[148]=8153; 	ST[0].nLinkList[148]=RADIO2_1;	/* RADIO2_1 50-48						VESZ */
-ST[0].nSiteList[149]=8154; 	ST[0].nLinkList[149]=RADIO2_2;	/* RADIO2_2 50-66 						VESZ */
+ST[0].nSiteList[149]=8154; 	ST[0].nLinkList[149]=RADIO2_5;	/* RADIO2_2 50-66 						VESZ */
 ST[0].nSiteList[150]=8155; 	ST[0].nLinkList[150]=RADIO2_2;	/* RADIO2_2 51-56						VESZ */
 ST[0].nSiteList[151]=8156; 	ST[0].nLinkList[151]=RADIO6_1;	/* RADIO6_1 51-35						VESZ */
 ST[0].nSiteList[152]=8157; 	ST[0].nLinkList[152]=RADIO2_3;	/* RADIO2_2 71-05 74-37						VESZ */
