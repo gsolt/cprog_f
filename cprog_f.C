@@ -6,7 +6,7 @@
 * [C] Copyright Zsolt Gergely,  2010.  All Rights Reserved                    	*
 *                                                                             	*
 * REV    DATE     PROGRAMMER         REVISION HISTORY                         	*
-
+* 1.1	2016.09.28 Gergely Zsolt	fnWriteSPData(pTAL->nIEC_MT_KommHiba,nVal , 0,0,0,0);
 *****************************************************************************/
 
 #include "CAPPLIC.H"
@@ -2460,7 +2460,7 @@ if (pTAL->nIEC_MT_KommHiba != 0)
 					nData = nRxBuf[29];	
 					nVal =  nData  & 1;    
 					
-					fnWriteSPData(pTAL->nIEC_MT_KommHiba,nData , 0,0,0,0);
+					fnWriteSPData(pTAL->nIEC_MT_KommHiba,nVal , 0,0,0,0);
 					}
 					else /* az nRxBuf[29] bitjeit lerakja pTAL->nIEC_MT_KommHiba cimtol max. pTAL->nKommStatusNum darabszammal  */
 					{
