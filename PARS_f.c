@@ -196,7 +196,7 @@ ST[0].nSiteList[52]	=8060; 	ST[0].nLinkList[52]	=RADIO4_6;	/* RADIO4_6 86-84		 	
 ST[0].nSiteList[53]	=8061; 	ST[0].nLinkList[53]	=RADIO8_4;	/* RADIO8_4 21-25		 				DOR */
 ST[0].nSiteList[54]	=8062; 	ST[0].nLinkList[54]	=RADIO8_4;	/* RADIO8_4 20-44		 				DOR */
 ST[0].nSiteList[55]	=8063; 	ST[0].nLinkList[55]	=RADIO8_4;	/* RADIO8_4 21-129		 				DOR */
-ST[0].nSiteList[56]	=8064; 	ST[0].nLinkList[56]	=RADIO7_5;	/* RADIO7_5 87-15		 				BICS */
+ST[0].nSiteList[56]	=8064; 	ST[0].nLinkList[56]	=RADIO7_7;	/* RADIO7_5 87-15		 				BICS */
 ST[0].nSiteList[57]	=8065; 	ST[0].nLinkList[57]	=RADIO7_5;	/* RADIO7_5 87-37 (87-36) 				BICS */
 ST[0].nSiteList[58]	=8066; 	ST[0].nLinkList[58]	=RADIO2_3;	/* RADIO4_6 54-65		 				PAP */
 ST[0].nSiteList[59]	=8067; 	ST[0].nLinkList[59]	=RADIO2_3;	/* RADIO2_4 50-61		 				VESZ */
