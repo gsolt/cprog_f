@@ -376,6 +376,11 @@ ST[0].nSiteList[212]=8211; 	ST[0].nLinkList[212]=RADIO1_4;		/* Gyõr, Árpád tömb	
 ST[0].nSiteList[213]=8209; 	ST[0].nLinkList[213]=RADIO2_2;	/* 53-14								VESZ */
 ST[0].nSiteList[214]=8210; 	ST[0].nLinkList[214]=RADIO2_2;	/* 53-15								VESZ */
 
+ST[0].nSiteList[215]=2000; 	ST[0].nLinkList[215]=RSLINK11;	/* Front end B							*/
+ST[0].nSiteList[216]=6000; 	ST[0].nLinkList[216]=RSLINK11;	/* Front end D							*/
+ST[0].nSiteList[217]=10000;	ST[0].nLinkList[217]=RSLINK11;	/* Front end H							*/
+ST[0].nSiteList[218]=8999; 	ST[0].nLinkList[218]=RSLINK11;	/* B redundancia						*/
+
 
 
 
