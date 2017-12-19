@@ -204,7 +204,7 @@ ST[0].nSiteList[60]	=8068; 	ST[0].nLinkList[60]	=RADIO3_5;	/* RADIO2_1 37-19		 	
 ST[0].nSiteList[61]	=8070; 	ST[0].nLinkList[61]	=RADIO3_5;	/* RADIO2_5 37-38		 				VESZ */
 ST[0].nSiteList[62]	=8071; 	ST[0].nLinkList[62]	=RADIO4_1;	/* RADIO4_1 71-73		 				PAP */
 ST[0].nSiteList[63]	=8072; 	ST[0].nLinkList[63]	=RADIO1_1;	/* RADIO1_1 Gyõr, szeméttelep			GYOR */
-ST[0].nSiteList[64]	=7088; 	ST[0].nLinkList[64]	=RADIO1_1;	/* RADIO1_1 Nagyszentjanos, Biogaz		GYOR */
+ST[0].nSiteList[64]	=7088; 	ST[0].nLinkList[64]	=RADIO1_5;	/* RADIO1_1 Nagyszentjanos, Biogaz		GYOR */
 ST[0].nSiteList[65]	=8073; 	ST[0].nLinkList[65]	=RADIO1_5;	/* RADIO1_5 Ikrény, Biogaz				GYOR */
 ST[0].nSiteList[66]	=5223; 	ST[0].nLinkList[66]	=RADIO1_1;	/* RADIO1_2 Ács, szélerõmû				GYOR */
 ST[0].nSiteList[67]	=8074; 	ST[0].nLinkList[67]	=RADIO2_2;	/* RADIO2_2 52-93						VESZ */
