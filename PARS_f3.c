@@ -326,6 +326,10 @@ sT[0].sCP[0].sCPR[212].nDCStart= 654;   sT[0].sCP[0].sCPR[212].nDCNum = 4;   sT[
 
 sT[0].sCP[0].sCPR[213].nDCStart= 659;   sT[0].sCP[0].sCPR[213].nDCNum = 1;   sT[0].sCP[0].sCPR[213].nSCStart= 660;   sT[0].sCP[0].sCPR[213].nAckStart=0;     sT[0].sCP[0].sCPR[213].nAckNum =0;  sT[0].sCP[0].sCPR[213].nSPOffsetCS= 3487; sT[0].sCP[0].sCPR[213].nSPOffsetLek= 3488; 	
 sT[0].sCP[0].sCPR[214].nDCStart= 662;   sT[0].sCP[0].sCPR[214].nDCNum = 1;   sT[0].sCP[0].sCPR[214].nSCStart= 663;   sT[0].sCP[0].sCPR[214].nAckStart=0;     sT[0].sCP[0].sCPR[214].nAckNum =0;  sT[0].sCP[0].sCPR[214].nSPOffsetCS= 3503; sT[0].sCP[0].sCPR[214].nSPOffsetLek= 3504; 	
+sT[0].sCP[0].sCPR[215].nDCStart= 0;     sT[0].sCP[0].sCPR[215].nDCNum = 0;   sT[0].sCP[0].sCPR[215].nSCStart= 0;     sT[0].sCP[0].sCPR[215].nAckStart=0;     sT[0].sCP[0].sCPR[215].nAckNum =0;  sT[0].sCP[0].sCPR[215].nSPOffsetCS= 0;    sT[0].sCP[0].sCPR[215].nSPOffsetLek= 0; 	
+sT[0].sCP[0].sCPR[216].nDCStart= 0;     sT[0].sCP[0].sCPR[216].nDCNum = 0;   sT[0].sCP[0].sCPR[216].nSCStart= 0;     sT[0].sCP[0].sCPR[216].nAckStart=0;     sT[0].sCP[0].sCPR[216].nAckNum =0;  sT[0].sCP[0].sCPR[216].nSPOffsetCS= 0;    sT[0].sCP[0].sCPR[216].nSPOffsetLek= 0; 	
+sT[0].sCP[0].sCPR[217].nDCStart= 0;     sT[0].sCP[0].sCPR[217].nDCNum = 0;   sT[0].sCP[0].sCPR[217].nSCStart= 0;     sT[0].sCP[0].sCPR[217].nAckStart=0;     sT[0].sCP[0].sCPR[217].nAckNum =0;  sT[0].sCP[0].sCPR[217].nSPOffsetCS= 0;    sT[0].sCP[0].sCPR[217].nSPOffsetLek= 0; 	
+sT[0].sCP[0].sCPR[218].nDCStart= 0;     sT[0].sCP[0].sCPR[218].nDCNum = 0;   sT[0].sCP[0].sCPR[218].nSCStart= 0;     sT[0].sCP[0].sCPR[218].nAckStart=0;     sT[0].sCP[0].sCPR[218].nAckNum =0;  sT[0].sCP[0].sCPR[218].nSPOffsetCS= 0;    sT[0].sCP[0].sCPR[218].nSPOffsetLek= 0; 	
 
 
 /* TMOK jelszámok inicializálása ciklusban */	

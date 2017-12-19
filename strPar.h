@@ -8,6 +8,7 @@
 #define  TYP_MOT2		5
 #define  TYP_SEP		6
 #define  TYP_ARKAD		7
+#define  TYP_FRONTEND	11
 
 
 #define	TOPICAL			1
