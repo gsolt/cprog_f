@@ -3470,7 +3470,7 @@ ReteszesTMOK_RTUNum[0] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnáss
 TMOKAllasjelzesOffsetek[1] = 1251; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[1] =1250;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[1][0] = 64;			/* Nagyszentjános boigáz */															/**/
-ReteszesRTUIndex[1][1] = 66;			/* Nagyszentjános boigáz */															/**/
+ReteszesRTUIndex[1][1] = 66;			/* Ács erõmû */															/**/
 ReteszesTMOK_RTUNum[1] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 
 					
