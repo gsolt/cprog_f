@@ -3421,7 +3421,7 @@ elküldi a szintén paraméterként megadott RTU-knak (szintén indexel megadva)
 /****************************************************************************/
 void fnRetesz(void)
 {
-#define  			RETESZ_TMOK_NUM		25	
+#define  			RETESZ_TMOK_NUM		50	
 #define  			RETESZ_RTU_NUM		10	
 #define  			TX_LENGTH			3	
 
@@ -3461,7 +3461,7 @@ static int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs o
 ReteszAllapotokKezdoCim = 300;  /* DP3, 225 */																		/**/
 ReteszParancsokKezdoCim = 670;	/* DC5, 110 */																		/**/
 																													/**/
-ReteszesTMOKNum = 3;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 6;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: 10-46 RTU:  Front end F -> Nagyszentjános, Ács -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -3477,8 +3477,8 @@ nReteszPar[0] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartoz
 
 /* 1. TMOK: 10-24 RTU:  Front end F -> Nagyszentjános, Ács -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[1] = 1251; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
-TMOK_ID[1][0] =1250;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/
-TMOK_ID[1][1] =1250;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/
+TMOK_ID[1][0] =1251;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/
+TMOK_ID[1][1] =1251;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/
 															
 ReteszesRTUIndex[1][0] = 64;			/* Nagyszentjános boigáz */															/**/
 ReteszesRTUIndex[1][1] = 66;			/* Ács erõmû */															/**/
@@ -3493,6 +3493,26 @@ ReteszesTMOK_RTUNum[2] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnáss
 nReteszPar[2] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[2] = 2;             /* DC parancs és reteszfunkció DP állapot offsete, ha tartozik hozzá DC parancs*/
 					
+/* 3. TMOK: 11-99 RTU:  Front end F -> Felpéc biogáz -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[3] = 1252; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[3][0] =1252;						       /* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[3][0] = 196;			/* Felpéc, Biogáz */															/**/
+ReteszesTMOK_RTUNum[3] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[3] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+					
+/* 4. TMOK: 15-52 RTU:  Front end F -> Felpéc biogáz -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[4] = 1254; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[4][0] =1254;						       /* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[4][0] = 196;			/* Felpéc, Biogáz */															/**/
+ReteszesTMOK_RTUNum[4] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[4] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 5. TMOK: 10-99 RTU:  Front end F -> Ikrény biogáz -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[5] = 1255; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[5][0] =1255;						       /* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[5][0] = 65;			/* Ikrény, Biogáz */															/**/
+ReteszesTMOK_RTUNum[5] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[5] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
