@@ -343,7 +343,7 @@ ST[0].nSiteList[190]=7133; 	ST[0].nLinkList[190]=RADIO4_7;	/* RADIO4_7 74-11				
 
 ST[0].nSiteList[191]=8194; 	ST[0].nLinkList[191]=RADIO4_5;	/* RADIO4_5 Pápa, Ganna					PAP */
 
-ST[0].nSiteList[192]=8195; 	ST[0].nLinkList[192]=RADIO1_1;	/* RADIO1_5 10-20						GYOR */
+ST[0].nSiteList[192]=8195; 	ST[0].nLinkList[192]=RADIO1_5;	/* RADIO1_5 10-20						GYOR */
 ST[0].nSiteList[193]=8196; 	ST[0].nLinkList[193]=RADIO1_4;	/* RADIO1_4 10-01						GYOR */
 
 ST[0].nSiteList[194]=8197; 	ST[0].nLinkList[194]=RADIO2_1;	/* RADIO2_1 Veszprém, kiserõmû			VESZ */
