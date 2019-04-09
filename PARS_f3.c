@@ -793,6 +793,11 @@ sT[0].sTI[65].nType = TYP_TAL;
 		sT[0].sTAL[65].nIEC_NM				= 221;
 		sT[0].sTAL[65].nNMNum		  		= 11;
 		sT[0].sTAL[65].nKommStatusNum		= 2;
+
+    sT[0].sTAL[65].nSP_EXTRA_OFFSET		= 3542;
+  	sT[0].sTAL[65].nSP_EXTRA_NUM		= 2;
+    
+    
 /* Ács, szélerõmû -----------------------------------------------------------*/
 sT[0].sTI[66].nType = TYP_TAL;
 
