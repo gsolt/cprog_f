@@ -707,7 +707,7 @@ ST[0].sRAD_K2[0].nIndx[101]=214;
 
 
 /* K3 : DOR, SOP, KOR, BI, GPRS */
-ST[0].sRAD_K3[0].nRtuNumRad = 43;  /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 45;  /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=5; /*8*/
 ST[0].sRAD_K3[0].nIndx[1]=6; /*8*/
 ST[0].sRAD_K3[0].nIndx[2]=8; /*8*/
@@ -751,15 +751,19 @@ ST[0].sRAD_K3[0].nIndx[39]=200; /*8*/
 ST[0].sRAD_K3[0].nIndx[40]=203; /*8*/
 ST[0].sRAD_K3[0].nIndx[41]=204; /*8*/
 ST[0].sRAD_K3[0].nIndx[42]=205; /*8*/
+ST[0].sRAD_K3[0].nIndx[43]=201; /*8*/
+ST[0].sRAD_K3[0].nIndx[44]=202; /*8*/
 
 
 /*RST[0].sLINK RTUk indexei*/
-ST[0].sLIN[0].nRtuNumLin = 5;
+ST[0].sLIN[0].nRtuNumLin = 7;
 ST[0].sLIN[0].nIndx[0] =206;
 ST[0].sLIN[0].nIndx[1] =207;
 ST[0].sLIN[0].nIndx[2] =208;
 ST[0].sLIN[0].nIndx[3] =209;
 ST[0].sLIN[0].nIndx[4] =210;
+ST[0].sLIN[0].nIndx[5] =179;
+ST[0].sLIN[0].nIndx[6] =195;
 
 
 
