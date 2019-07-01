@@ -1701,6 +1701,9 @@ sT[0].sTI[196].nType = TYP_TAL;
 		sT[0].sTAL[196].nNMNum		  		= 11;
 		sT[0].sTAL[196].nKommStatusNum		= 2;
 
+    sT[0].sTAL[196].nSP_EXTRA_OFFSET		= 3544;
+  	sT[0].sTAL[196].nSP_EXTRA_NUM		= 2;
+
 /* 21-73  -----------------------------------------------------------*/	
 sT[0].sTI[197].nType = TYP_TMOK;
 
