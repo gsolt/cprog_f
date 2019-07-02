@@ -26,6 +26,8 @@
 #define  LEKERDEZES_TIMEOUT		100
 #define  COMMAND_LENGTH			14
 
+#define  			RETESZ_TMOK_NUM		90	
+#define  			RETESZ_RTU_NUM		10	
 
 /*--------------------------------------------------------------------------*/
 /* Prototypes and defines                                                   */
@@ -288,6 +290,21 @@ STATION_DESC_MOT	sMOT[MAX_RTU];
 TOTAL_PAR			sT;
 int					nTotalRTU;
 BYTE			nMoscadHours;
+
+unsigned int		ReteszesTMOKNum;									/* Reteszes TMOK-k száma az adott front-endben */
+unsigned int		ReteszesRTUIndex[RETESZ_TMOK_NUM][RETESZ_RTU_NUM];	/* A reteszes TMOK-khoz tartozó RTU-k indexei a site táblában */
+unsigned int		ReteszesTMOK_RTUNum[RETESZ_TMOK_NUM];				/* Adott reteszes TMOK-khoz tartozó RTU-k száma */
+unsigned int		ReteszAllapotokKezdoCim;							/* Retesz állapotok kezdõcíme az IEC táblában */
+unsigned int		ReteszParancsokKezdoCim;							/* Retesz élesítés/bénítás parancsok kezdõcíme az IEC táblában */
+unsigned int		TMOKAllasjelzesOffsetek[RETESZ_TMOK_NUM];			/* Reteszes TMOK-k állásjelzéseinek az offsete */
+unsigned int		TMOK_ID[RETESZ_TMOK_NUM][RETESZ_RTU_NUM];							/* Reteszes TMOK-k azonosítója a kimenõ táviratban = DP offset */
+int    nReteszPar[RETESZ_TMOK_NUM];			/* 1, ha tartozik hozzá retesz parancs */
+int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs offsete, ha tartozik hozzá retesz parancs */
+unsigned int		ReteszAllapotok[RETESZ_TMOK_NUM];
+unsigned int		PrReteszAllapotok[RETESZ_TMOK_NUM];
+unsigned int		TMOKAllasjelzesek[RETESZ_TMOK_NUM];
+unsigned int	prevTMOKAllasjelzesek[RETESZ_TMOK_NUM];
+
 /*--------------------------------------------------------------------------*/
 /* The list of the function included in this block                          */
 /*--------------------------------------------------------------------------*/
@@ -3421,27 +3438,10 @@ elküldi a szintén paraméterként megadott RTU-knak (szintén indexel megadva)
 /****************************************************************************/
 void fnRetesz(void)
 {
-#define  			RETESZ_TMOK_NUM		50	
-#define  			RETESZ_RTU_NUM		10	
 #define  			TX_LENGTH			3	
 
 
 	
-unsigned int		ReteszesTMOKNum;									/* Reteszes TMOK-k száma az adott front-endben */
-unsigned int		ReteszesRTUIndex[RETESZ_TMOK_NUM][RETESZ_RTU_NUM];	/* A reteszes TMOK-khoz tartozó RTU-k indexei a site táblában */
-unsigned int		ReteszesTMOK_RTUNum[RETESZ_TMOK_NUM];				/* Adott reteszes TMOK-khoz tartozó RTU-k száma */
-unsigned int		ReteszAllapotokKezdoCim;							/* Retesz állapotok kezdõcíme az IEC táblában */
-unsigned int		ReteszParancsokKezdoCim;							/* Retesz élesítés/bénítás parancsok kezdõcíme az IEC táblában */
-unsigned int		TMOKAllasjelzesOffsetek[RETESZ_TMOK_NUM];			/* Reteszes TMOK-k állásjelzéseinek az offsete */
-unsigned int		TMOK_ID[RETESZ_TMOK_NUM][RETESZ_RTU_NUM];							/* Reteszes TMOK-k azonosítója a táviratban = DP offset */
-
-
-unsigned int		ReteszAllapotok[RETESZ_TMOK_NUM];
-static unsigned int		PrReteszAllapotok[RETESZ_TMOK_NUM];
-unsigned int		TMOKAllasjelzesek[RETESZ_TMOK_NUM];
-
-
-static unsigned int	prevTMOKAllasjelzesek[RETESZ_TMOK_NUM];
 unsigned int		i,j;
 char				message[500];
 int					nDPTblIndx;
@@ -3451,8 +3451,6 @@ unsigned short		nTxBuf[80];
 
 short				*p_col_DCAct; 
 
-static int    nReteszPar[RETESZ_TMOK_NUM];			/* 1, ha tartozik hozzá retesz parancs */
-static int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs offsete, ha tartozik hozzá retesz parancs */
 
 /**********************************************************************************************************************/
 /* Kezdõértékek megadása - minden frontendnél más!!! 																  */
@@ -3811,7 +3809,8 @@ if (	nDPStart > 0)
 Az RTU indítja a lekérdezést, amikor újraindul, hogy kezdeti értéket kapjanak 
 az állásjelzések
 [0]: 100
-[1]: DP offsete											*/
+[1]: DP offsete											
+2019.05.22: figyelembe veszi a retesz funkció bénítva állapotot                                                    */
 /****************************************************************************/
 void fnDP_LEK( unsigned char *rx_buf, int nSite_ID)
 {
@@ -3821,6 +3820,7 @@ void fnDP_LEK( unsigned char *rx_buf, int nSite_ID)
 	unsigned short			nDP;
 	int						nOffset;
 	unsigned short		nTxBuf[80];	
+  int i,nIndex, nReteszAllapot;
 	
 		p_col_RxBuf = (short *)(rx_buf);	
 
@@ -3830,7 +3830,39 @@ void fnDP_LEK( unsigned char *rx_buf, int nSite_ID)
         MOSCAD_error(message );
         
         
- if (nOffset <1500)
+if (nOffset <1500)
+ {              
+     
+ 
+ /*----------------------------------------------------------------------------------------------*/
+  nIndex=10000;
+  
+  /* Megkeresi az offsethez tartozó tömbindexet*/
+  for (i=0;i<ReteszesTMOKNum && i<RETESZ_TMOK_NUM ;i++)
+    {
+    if (TMOKAllasjelzesOffsetek[i]==nOffset)
+      {
+      nIndex=i;
+      }
+    } /* end for */
+  
+  /* Ha megtalálta */  
+  if (nIndex<ReteszesTMOKNum)
+    {
+    nReteszAllapot = ReteszAllapotok[nIndex];
+   	MOSCAD_sprintf(message,"Reteszes TMOK indexe: nIndex: %d",nIndex);
+   	MOSCAD_message(message ); 				
+
+    }
+  /* Ha nem */      
+  else
+    {
+    nReteszAllapot = 2;
+    }  
+ 
+ /*----------------------------------------------------------------------------------------------*/
+  
+ if (nReteszAllapot==1)
  {
 	nDP=fnReadDPData(nOffset, 0, 0, 0, 0);
 	
@@ -3846,13 +3878,17 @@ void fnDP_LEK( unsigned char *rx_buf, int nSite_ID)
    				 	MOSCAD_error(message ); 				
    				}   
 
-	
+	} /* end if */
+  else
+  {
+	MOSCAD_sprintf(message,"Reteszfunkció tiltva ,offset: %d",nOffset);
+ 	MOSCAD_message(message ); 				
+  } /* end else */
  } /* end if */
 
 	
 }
 /* end fnDP_LEK ***************************************************************************/
-
 
 
 
