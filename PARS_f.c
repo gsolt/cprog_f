@@ -147,7 +147,7 @@ ST[0].nSiteList[3]	=8004; 	ST[0].nLinkList[3]	=RADIO6_1;	/* RADIO6_1 51-65		 			
 ST[0].nSiteList[4]	=8005; 	ST[0].nLinkList[4]	=RADIO1_6;	/* RADIO1_6 61-46		 				KAP */
 ST[0].nSiteList[5]	=8006; 	ST[0].nLinkList[5]	=RADIO3_4;	/* RADIO3_4 60-33		 				SOP */
 ST[0].nSiteList[6]	=8007; 	ST[0].nLinkList[6]	=RADIO3_1;	/* RADIO3_1 62-85		 				SOP */
-ST[0].nSiteList[7]	=8008; 	ST[0].nLinkList[7]	=RADIO1_5;	/* RADIO1_5 13-15		 				GYOR */
+ST[0].nSiteList[7]	=8008; 	ST[0].nLinkList[7]	=RADIO1_4;	/* RADIO1_5 13-15		 				GYOR */
 ST[0].nSiteList[8]	=8009; 	ST[0].nLinkList[8]	=RADIO3_1;	/* RADIO3_1 60-01		 				SOP */
 ST[0].nSiteList[9]	=8010; 	ST[0].nLinkList[9]	=RADIO9_5;	/* RADIO9_5 90-77		 				SUM */
 ST[0].nSiteList[10]	=8011; 	ST[0].nLinkList[10]	=RADIO9_5;	/* RADIO9_5 90-78		 				SUM */
