@@ -171,12 +171,12 @@ ST[0].nSiteList[27]	=8035; 	ST[0].nLinkList[27]	=RADIO9_1;	/* RADIO9_1 52-98		 	
 ST[0].nSiteList[28]	=8036; 	ST[0].nLinkList[28]	=RADIO2_1;	/* RADIO2_1 50-31		 				VESZ */
 ST[0].nSiteList[29]	=8037; 	ST[0].nLinkList[29]	=RADIO2_3;	/* RADIO2_3 51-96		 				VESZ */
 ST[0].nSiteList[30]	=8038; 	ST[0].nLinkList[30]	=RADIO4_1;	/* RADIO4_6 73-02		 				PAP */
-ST[0].nSiteList[31]	=8039; 	ST[0].nLinkList[31]	=RADIO1_5;	/* RADIO1_5 13-93		 				GYOR */
+ST[0].nSiteList[31]	=8039; 	ST[0].nLinkList[31]	=RADIO1_4;	/* RADIO1_5 13-92	(13-93)		GYOR */
 ST[0].nSiteList[32]	=8040; 	ST[0].nLinkList[32]	=LINE11;	/* RADIO1_5 12-88		 				GYOR */
 ST[0].nSiteList[33]	=8041; 	ST[0].nLinkList[33]	=RADIO1_6;	/* RADIO1_6 64-09		 				GYOR */
 ST[0].nSiteList[34]	=8042; 	ST[0].nLinkList[34]	=RADIO3_3;	/* RADIO3_1 60-88		 				SOP */
 ST[0].nSiteList[35]	=8043; 	ST[0].nLinkList[35]	=RADIO1_6;	/* RADIO1_6 60-85		 				GYOR */
-ST[0].nSiteList[36]	=8044; 	ST[0].nLinkList[36]	=RADIO1_5;	/* RADIO1_5 11-83		 				GYOR */
+ST[0].nSiteList[36]	=8044; 	ST[0].nLinkList[36]	=RADIO1_1;	/* RADIO1_5 11-83		 				GYOR */
 ST[0].nSiteList[37]	=8045; 	ST[0].nLinkList[37]	=RADIO3_4;	/* RADIO3_4 62-17		 				SOP */
 ST[0].nSiteList[38]	=8046; 	ST[0].nLinkList[38]	=RADIO5_1;	/* RADIO1_5 64-62		 				GYOR */
 ST[0].nSiteList[39]	=8047; 	ST[0].nLinkList[39]	=RADIO1_5;	/* RADIO1_5 11-18		 				GYOR */
