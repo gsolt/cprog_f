@@ -224,7 +224,7 @@ ST[0].nSiteList[79]	=8086; 	ST[0].nLinkList[79]	=RADIO1_1;	/* RADIO1_1 10-91				
 ST[0].nSiteList[80]	=8087; 	ST[0].nLinkList[80]	=RADIO1_5;	/* RADIO1_5 19-604						GYOR */
 ST[0].nSiteList[81]	=8088; 	ST[0].nLinkList[81]	=RADIO1_1;	/* RADIO1_1 11-39						GYOR */
 ST[0].nSiteList[82]	=8089; 	ST[0].nLinkList[82]	=RADIO1_1;	/* RADIO1_1 11-13						GYOR */
-ST[0].nSiteList[83]	=8090; 	ST[0].nLinkList[83]	=RADIO1_4;	/* RADIO1_4 10-06						GYOR */
+ST[0].nSiteList[83]	=8090; 	ST[0].nLinkList[83]	=RADIO1_1;	/* RADIO1_4 10-06						GYOR */
 ST[0].nSiteList[84]	=8091; 	ST[0].nLinkList[84]	=RADIO1_6;	/* RADIO1_6 61-23						GYOR */
 ST[0].nSiteList[85]	=8092; 	ST[0].nLinkList[85]	=RADIO1_6;	/* RADIO1_6 61-31						GYOR */
 ST[0].nSiteList[86]	=8093; 	ST[0].nLinkList[86]	=RADIO5_5;	/* RADIO5_7 42-01						KOR */
@@ -262,7 +262,7 @@ ST[0].nSiteList[114]=8120; 	ST[0].nLinkList[114]=RADIO2_8;	/* RADIO2_8 37-26				
 ST[0].nSiteList[115]=5279; 	ST[0].nLinkList[115]=RADIO7_2;	/* RADIO8_4 20-01						DOR */
 
 ST[0].nSiteList[116]=8121; 	ST[0].nLinkList[116]=RADIO2_1;	/* RADIO2_1 50-30						VESZ */
-ST[0].nSiteList[117]=8122; 	ST[0].nLinkList[117]=RADIO1_5;	/* RADIO1_5 11-25						GYOR */
+ST[0].nSiteList[117]=8122; 	ST[0].nLinkList[117]=RADIO1_4;	/* RADIO1_5 11-25						GYOR */
 ST[0].nSiteList[118]=8123; 	ST[0].nLinkList[118]=RADIO4_4;	/* RADIO4_4 74-38						PAP */
 ST[0].nSiteList[119]=8124; 	ST[0].nLinkList[119]=RADIO4_6;	/* RADIO4_6 54-79						PAP */
 ST[0].nSiteList[120]=8125; 	ST[0].nLinkList[120]=RADIO4_5;	/* RADIO4_5 72-73						PAP */
