@@ -182,7 +182,7 @@ ST[0].nSiteList[38]	=8046; 	ST[0].nLinkList[38]	=RADIO5_1;	/* RADIO1_5 64-62		 	
 ST[0].nSiteList[39]	=8047; 	ST[0].nLinkList[39]	=RADIO1_5;	/* RADIO1_5 11-18		 				GYOR */
 ST[0].nSiteList[40]	=8048; 	ST[0].nLinkList[40]	=RADIO5_1;	/* RADIO1_5 61-20		 				GYOR */
 ST[0].nSiteList[41]	=8049; 	ST[0].nLinkList[41]	=RADIO1_6;	/* RADIO1_6 64-70		 				GYOR */
-ST[0].nSiteList[42]	=8050; 	ST[0].nLinkList[42]	=RADIO1_5;	/* RADIO1_5 11-44		 				GYOR */
+ST[0].nSiteList[42]	=8050; 	ST[0].nLinkList[42]	=RADIO1_4;	/* RADIO1_5 11-44		 				GYOR */
 ST[0].nSiteList[43]	=8051; 	ST[0].nLinkList[43]	=RADIO1_5;	/* RADIO1_5 11-04		 				GYOR */
 ST[0].nSiteList[44]	=8052; 	ST[0].nLinkList[44]	=RADIO1_5;	/* RADIO1_5 11-43		 				GYOR */
 ST[0].nSiteList[45]	=8053; 	ST[0].nLinkList[45]	=RADIO5_1;	/* RADIO1_5 61-06		 				GYOR */
